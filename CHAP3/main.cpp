@@ -1,11 +1,15 @@
 ﻿#include <iostream>
-#include "Picture.h"
+#include "Coffee.h"
 using namespace std;
 
 int main()
 {
-	Picture pic;
-	Picture mt(10, 14, "한라산");
-	cout << pic.getWidth() << "x" << pic.getHeight() << " " << pic.getPlace() << endl;
-	cout << mt.getWidth() << "x" << mt.getHeight() << " " << mt.getPlace() << endl;
+	Coffee espresso; // 커피 10 설탕 0 우유 0 물 0
+	Coffee americano(5, 0, 0, 10);
+	Coffee cappoucchino(5, 1, 5, 2);
+	Coffee mySweet(3,7,5,5);
+
+	espresso.show();
+	cout << endl;
+	mySweet.show();
 }
